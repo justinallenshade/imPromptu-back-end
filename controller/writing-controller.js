@@ -2,9 +2,9 @@ const express = require("express");
 const router = express.Router();
 const writingRouter = require("../models/writing");
 
-//list all posts
-router.get("/", (req, res) => {
-    writingRouter.find({}).then((post) => res.json(post));
+
+router.get("/:username", (req, res) => {
+    writingRouter.find(req.params).then((router) => res.json(router));
 });
   
 router.post("/", (req, res) => {

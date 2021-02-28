@@ -1,16 +1,49 @@
 [
     {
         "username": "jshade",
+        "project": "project 1",
         "title": "sometitle",
         "body": "some novice story or prompt"
     },
     {
         "username": "jshade",
+        "project": "project 2",
         "title": "sometitle",
         "body": "some novice story or prompt"
     },
     {
         "username": "jshade",
+        "project": "project 3",
+        "title": "sometitle",
+        "body": "some novice story or prompt"
+    },
+    {
+        "username": "Alex",
+        "project": "project 1",
+        "title": "ch1",
+        "body": "some novice story or prompt"
+    },
+    {
+        "username": "Alex",
+        "project": "project 1",
+        "title": "Ch2",
+        "body": "some novice story or prompt"
+    },
+    {
+        "username": "Shane",
+        "project": "project 1",
+        "title": "ch1",
+        "body": "some novice story or prompt"
+    },
+    {
+        "username": "Shane",
+        "project": "project 1",
+        "title": "ch2",
+        "body": "some novice story or prompt"
+    },
+    {
+        "username": "Shane",
+        "project": "project 2",
         "title": "sometitle",
         "body": "some novice story or prompt"
     }

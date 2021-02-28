@@ -2,6 +2,7 @@ const mongoose = require("../db/connections");
 
 const writingSchema = new mongoose.Schema({
   username: { type: String, required: true,},
+  project: { type: String },
   title: { type: String },
   body: { type: String },
 });
@@ -9,5 +10,4 @@ const writingSchema = new mongoose.Schema({
 
 const writing = mongoose.model("Writing", writingSchema);
 
-// export the newly created model
 module.exports = writing;

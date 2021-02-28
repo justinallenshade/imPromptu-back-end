@@ -11,6 +11,7 @@ router.post('/', async (req, res) => {
         res.status(500).json({
             message: "username not valid"
         })
+        
     }
     else{
         // where you would take the salt and password entered
@@ -60,14 +61,5 @@ router.delete("/:username", (req, res) => {
     loginRouter.findOneAndDelete({ username: username }).then((x) => res.json(x));
 });
 
-router.put("/:username", (req, res) => {
-
-    loginRouter.findOneAndUpdate(
-        { username: req.params.username }, 
-        req.body
-    )
-    .then(loginRouter.find({})
-    .then(router => res.json(router)))
-});
 
 module.exports = router;
