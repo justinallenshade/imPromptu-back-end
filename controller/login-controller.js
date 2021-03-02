@@ -8,10 +8,10 @@ router.post('/', async (req, res) => {
     const user = await loginRouter.findOne({ username : username})
 
     if( !user ){
-        res.status(500).json({
-            message: "username not valid"
-        })
-        
+        // res.status(500).json({
+        //     message: "username not valid"
+        // })
+        res.send(console.log(req))
     }
     else{
         // where you would take the salt and password entered
@@ -40,12 +40,12 @@ router.post("/create", async (req, res) => {
 
     if( user ){
         res.status(500).json({
-            message: "email not valid"
+            message: "username not valid"
         })
     }
     else{
         if( mail ){
-            res,status(500).json({
+            res.status(500).json({
                 message: "email not valid"
             })
         }
