@@ -1,31 +1,13 @@
 [
     {
         "username": "test",
-        "projects": ["project1"],
+        "projects": ["project1", "project2", "project3"],
         "email": "test@gmail.com",
         "password": "test"
     },
     {
-        "username": "test2",
-        "projects": ["project1"],
-        "email": "test2@gmail.com",
-        "password": "test2"
-    },
-    {
-        "username": "test3",
-        "projects": ["project1"],
-        "email": "test3@gmail.com",
-        "password": "test3"
-    },
-    {
-        "username": "test4",
-        "projects": ["project1"],
-        "email": "test4@gmail.com",
-        "password": "test4"
-    },
-    {
         "username": "jshade",
-        "projects": ["project1", "project2", "project3", "project 4", "best project ever"],
+        "projects": ["project1", "project2"],
         "email": "tacocat4@gmail.com",
         "password": "jshade"
     }
