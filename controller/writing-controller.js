@@ -17,7 +17,7 @@ router.put("/", (req, res) => {
     writingRouter
       .findOneAndUpdate({ _id: req.body.id }, req.body)
       .then(writingRouter.find({}))
-      .then((router) => res.json(router));
+      .then((x) => res.json(x));
 });
   
 

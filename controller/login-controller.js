@@ -56,6 +56,15 @@ router.post("/create", async (req, res) => {
     }
 })
 
+router.put("/:username", (req, res) => {
+    const username = req.params.username;
+    const project = req.body.projects;
+
+    loginRouter.findOneAndUpdate({ username: username }, {$addToSet: {projects: project}}, {new: true})
+    .then(loginRouter.find({}))
+    .then((x) => res.json(x.projects));
+})
+
 router.delete("/:username", (req, res) => {
     const username = req.params.username;
     loginRouter.findOneAndDelete({ username: username }).then((x) => res.json(x));

@@ -2,7 +2,7 @@ const mongoose = require("../db/connections");
 
 const LoginSchema = new mongoose.Schema({
         username: String,
-        projects: Array,
+        projects: {type: Array, unique: true},
         email: String,
         password: String
 });
