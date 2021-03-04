@@ -31,7 +31,8 @@ router.post('/', async (req, res) => {
     }
 })
 
-router.post("/create", async (req, res) => {
+router.options("/create", cors())
+router.post("/create",cors(),  async (req, res) => {
     const username = req.body.username
     const email = req.body.email
 
