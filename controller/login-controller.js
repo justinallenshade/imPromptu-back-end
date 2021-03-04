@@ -2,6 +2,12 @@ const express = require("express");
 const router = express.Router();
 const loginRouter = require("../models/login-data");
 
+router.all('/', function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "https://impromptu-front-end.herokuapp.com");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
+    next()
+  });
+
 router.post('/', async (req, res) => {
     const username = req.body.username
     
