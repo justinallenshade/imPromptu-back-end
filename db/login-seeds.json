@@ -1,0 +1,14 @@
+[
+    {
+        "username": "test",
+        "projects": ["project1", "project2", "project3"],
+        "email": "test@gmail.com",
+        "password": "test"
+    },
+    {
+        "username": "jshade",
+        "projects": ["project1", "project2"],
+        "email": "tacocat4@gmail.com",
+        "password": "jshade"
+    }
+]
