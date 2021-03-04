@@ -22,7 +22,7 @@ router.put("/", (req, res) => {
   
 router.delete("/:username", (req, res) => {
     let username = req.params.username
-    const project = req.params.project
+    const project = req.body.project
      writingRouter.deleteMany({ username: username }, {project: project}).then((x) => res.json(x));
  
 })
