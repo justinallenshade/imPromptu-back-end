@@ -7,7 +7,7 @@ const writingController = require('./controller/writing-controller')
 const cors = require("cors");
 
 app.use(cors({
-  origin: "https://impromptu-front-end.herokuapp.com/",
+  origin: "*",
 }))
 
 
