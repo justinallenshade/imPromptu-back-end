@@ -20,11 +20,17 @@ router.put("/", (req, res) => {
       .then((x) => res.json({title: x.title, body: x.body}));
 });
   
+router.delete("/:username", (req, res) => {
+    let username = req.params.username
+    const project = req.params.project
+     writingRouter.deleteMany({ username: username }, {project: project}).then((x) => res.json(x));
+ 
+})
 
 router.delete("/", (req, res) => {
     const id = req.body.id;
     writingRouter.findOneAndDelete({ _id: id }).then((x) => res.json(x));
 });
-  
+
   module.exports = router;
   
