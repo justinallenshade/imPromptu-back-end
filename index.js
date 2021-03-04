@@ -7,7 +7,14 @@ const writingController = require('./controller/writing-controller')
 const cors = require("cors");
 
 app.use(cors())
-
+app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", `https://impromptu-front-end.herokuapp.com`)
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept"
+  );
+  next(); 
+})
 
 // middleware
 app.use(express.json());
